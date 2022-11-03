@@ -1,0 +1,33 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: map-get($colors, 'light');
+    // overflow: hidden;
+    // background: map-get($color, "primary-color-text");
+    font-family: $primary-fonts;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    @include heading(type-6);
+    font-weight: 500;
+}
+
+.fa {
+    @include heading(type-5);
+    margin-right: 15px;
+}
+
+ 
+::placeholder,input {
+    color: $light;
+    font-family: $primary-fonts;
+}

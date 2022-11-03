@@ -1,0 +1,20 @@
+.site-wrapper {
+    @include flexbox();
+    @include flex-direction(column);
+    @include width-height(100%, 100%);
+    
+    .main-contentWrapper {
+        flex-grow: 1;
+        @include flexbox();
+        overflow: auto;
+    }
+}
+
+// Topbar scss file
+@import 'topbar';
+
+// Sidebar scss file
+@import 'sidebar';
+
+//  Site Content
+@import 'siteContent';

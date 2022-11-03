@@ -1,0 +1,48 @@
+// Variables
+$primary: #1bb3f3;
+$secondary : #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$info: #17a2b8;
+$warning: #ffc107;
+$light:#8197b1;
+$dark:#1c3d61;
+$white: #ffffff;
+$black: #000000;
+$background-color: #fcfcfd;
+
+$primary-text-size: 1rem;
+$primary-fonts: 'Montserrat',sans-serif;
+$transitions: all 250ms ease-in-out;
+
+$card-color: #122e3a;
+// Maps
+
+// Map for colors
+$colors:('primary': $primary,
+'secondary': $secondary,
+'success': $success,
+'danger': $danger,
+'info': $info,
+'warning': $warning,
+'light': $light,
+'dark': $dark,
+'white': $white,
+'black': $black);
+
+// Map for BreakPoint 
+$breakpoints: (
+    "phone-small":  400px,
+    "phone-medium": 480px,
+    "phone-large":  560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "laptop-small": 1024px,
+    "laptop":       1280px,
+    "desktop-wide": 1440px
+);
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px,
+// xxl: 1400px,

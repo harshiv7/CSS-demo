@@ -1,0 +1,68 @@
+/* Sidebar css */
+#sidebar {
+    @include flexbox();
+    @include flex-direction(column);
+    flex: 0 0 240px;
+    width: 240px;
+    padding: 20px 0;
+    border-right: 1px solid lighten($light, 30%);
+    @include mq('laptop') {
+        display: none;
+    }
+    .nav-sidebar{
+        flex-grow: 1;
+    }
+    .nav-item {
+        .nav-link {
+            @include flexbox;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            transition: .4s all;
+            &.active,
+            &:hover {
+                color: map-get($colors, 'dark');
+            }
+        }
+    }
+
+    .chrome-ads {
+        @include width-height(90%, auto);
+        margin: 0 auto;
+        border: 1px solid lighten($light, 30%);
+        @include border-radius(8px);
+        text-align: center;
+    }
+}
+
+.chrome-ads {
+    .chrome-logo {
+        margin: 15px;
+
+        img {
+            @include width-height(45px, 45px);
+        }
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+
+    p {
+        margin: 10px;
+        font-size: $primary-text-size - .25rem;
+    }
+
+    .btn {
+        &:hover {
+            background-color: $white;
+            color: $primary;
+            border: 1px solid map-get($colors, 'primary');
+        }
+    }
+
+    .button-chrome {
+        margin-bottom: 20px;
+
+    }
+}

@@ -1,0 +1,15 @@
+/* Background color scss*/
+@each $color,
+$value in $colors {
+    .bg-color-#{$color} {
+        background-color: $value;
+    }
+}
+
+/* Text color scss*/
+@each $color,
+$value in $colors {
+    .text-#{$color} {
+        color: $value;
+    }
+}

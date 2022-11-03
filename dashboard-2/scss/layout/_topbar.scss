@@ -1,0 +1,54 @@
+/* Topbar Css*/
+#topbar {
+    @include flexbox();
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    border-bottom: 1px solid lighten($light, 30%);
+    @include mq('tablet') {
+        padding: 20px;
+    }
+
+    .brand-logo {
+        @include width-height(auto, 50px);
+
+        img {
+            @include width-height(inherit, inherit);
+        }
+    }
+
+    .nav-topbar {
+        height: 100%;
+        @include mq('tablet') {
+            display: none;
+        }
+    }
+
+    .nav-menu {
+        @include flexbox();
+        height: inherit;
+
+        .nav-link {
+            @include flexbox();
+            align-items: center;
+            margin: 0 40px;
+            height: 100%;
+            border-bottom: 3px solid transparent;
+            transition: .4s all;
+
+            &.active,
+            &:hover {
+                border-bottom: 3px solid map-get($colors, 'primary');
+                color: map-get($colors, 'dark');
+            }
+        }
+    }
+
+    .user-image {
+        img {
+            @include width-height(45px, 45px);
+            @include border-radius(50%);
+        }
+    }
+}

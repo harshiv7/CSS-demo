@@ -1,0 +1,24 @@
+/* Buttons css*/ 
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-family: $primary-fonts;
+    @include border-radius(6px);
+    cursor: pointer;
+    transition: $transitions;
+    border: 1px solid map-get($colors, 'primary');
+    
+
+}
+
+@each $color , $value in $colors{
+    .btn-#{$color}{
+        background-color: $value;
+    }
+}

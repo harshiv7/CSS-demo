@@ -1,0 +1,107 @@
+// Mixin for font size
+
+@mixin heading($size) {
+    @if($size==type-1) {
+        font-size: $primary-text-size * 2.5;
+    }
+
+    @else if ($size==type-2) {
+        font-size: $primary-text-size * 1.6;
+    }
+
+    @else if ($size==type-3) {
+        font-size: $primary-text-size * 1.4;
+    }
+
+    @else if ($size==type-4) {
+        font-size: $primary-text-size * 1.2;
+    }
+
+    @else if ($size==type-5) {
+        font-size: $primary-text-size * 1;
+    }
+
+    @else {
+        font-size: .9rem;
+    }
+}
+
+// Mixin for width and height 
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// Mixin for display flex 
+@mixin flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// Mixin for flex direction
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+// Mixin for flex wrap
+@mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+// Mixin for flex shorthand property 
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex: $values;
+    -webkit-flex: $values;
+    -ms-flex: $values;
+    flex: $values;
+}
+
+// Mixin for transition
+@mixin transition($property, $duration, $easing: linear) {
+    transition: $property $duration $easing;
+    -webkit-transition: $property $duration $easing;
+    -moz-transition: $property $duration $easing;
+}
+
+// Mixin for border-radius
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+}
+
+// Mixin for overlay
+@mixin overlay() {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+// Mixin for breakpoints
+@mixin mq($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $type==max {
+            $width: $width + 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}

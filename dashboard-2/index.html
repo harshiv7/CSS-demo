@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=" Joinesty Dashboard ">
+    <meta name="keywords" content="HTML,CSS,SCSS">
+    <meta name="author" content="Harshiv Patel">
+    <title> Joinesty | Dashboard </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Goole fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- Start : Site-Header -->
+        <header id="topbar">
+            <!-- Brand logo -->
+            <figure class="brand-logo">
+                <img src="img/joinesty-logo.jpg" alt="joinesty-logo">
+            </figure>
+            <!-- Start : Topbar navigation -->
+            <nav class="nav-topbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <span class="fa fa-home"></span>
+                            <span> My Dashboard </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">
+                            <span class="fa fa-users"></span>
+                            <span> My Joiners </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">
+                            <span class="fa fa-tag icons"></span>
+                            <span> My Deals </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- User Image -->
+            <figure class="user-image">
+                <img src="img/users/user-image.jfif" alt="user-image">
+            </figure>
+            <!-- End : Topbar navigation -->
+        </header>
+        <!-- End : Site-Header -->
+        <!-- Start : Main Body -->
+        <main class="main-contentWrapper">
+            <!-- Start : Sidebar -->
+            <aside id="sidebar">
+                <nav class="nav-sidebar">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <div class="wrap-left">
+                                    <span class="fa fa-sort-amount-up"></span>
+                                    <span> All accounts </span>
+                                </div>
+                                <div class="wrap-right">
+                                    <span class="count">30</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="wrap-left">
+                                    <span class="fa fa-share-alt"></span>
+                                    <span> Shared with me </span>
+                                </div>
+                                <div class="wrap-right">
+                                    <span class="count">4</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="wrap-left">
+                                    <span class="fa fa-filter"></span>
+                                    <span> Once I have shared </span>
+                                </div>
+                                <div class="wrap-right">
+                                    <span class="count"> 0 </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="wrap-left">
+                                    <span class="fa fa-envelope"></span>
+                                    <span> Found in email </span>
+                                </div>
+                                <div class="wrap-right">
+                                    <span class="count">0</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="chrome-ads">
+                    <figure class="chrome-logo">
+                        <img src="img/social/chrome-logo.png" alt="">
+                    </figure>
+                    <h4 class="text-dark"> Add our Extension </h4>
+                    <p>To make the most of Joinesty install our browser extension</p>
+                    <button class="btn btn-primary text-white button-chrome">Install Extension</button>
+                </div>
+            </aside>
+            <!-- End : Sidebar -->
+            <!-- Start : Site Content -->
+            <section class="section-siteContent">
+                <!-- Search Bar -->
+                <div class="search-bar bg-color-white">
+                    <div class="search">
+                        <label class="fas fa-search" for="search"></label>
+                        <input type="text" id="search" placeholder="Search for services, e.g. Amazon or Netflix ">
+                    </div>
+                    <button class="btn btn-white btn-acct text-light "> Find accounts in &nbsp<span
+                            class="fab fa-google"></span></button>
+                </div>
+                <!-- List and card options -->
+                <div class="options">
+                    <span> View membership as : </span>
+                    <a href="" class="active"> <span class="list fa fa-list-ul"></span> List </a>
+                    <a href=""> <span class="cards fa fa-th"></span> Cards </a>
+                </div>
+                <!-- Wrapper div for scrollable section -->
+                <div class="wrapper">
+                    <!-- Start : Dashboard Cards -->
+                    <div class="cards-wrapper text-white">
+                        <!-- card 1 -->
+                        <article class="card card-1">
+                            <span class="fa fa-user"></span>
+                            <span class="count"> 38 </span>
+                            <span class="description"> Total membership </span>
+                        </article>
+                        <!-- card 2 -->
+                        <article class="card card-2">
+                            <span class="fa fa-shopping-cart"></span>
+                            <span class="count"> 2 </span>
+                            <span class="description"> Retail </span>
+                        </article>
+                        <!-- card 3 -->
+                        <article class="card card-3">
+                            <span class="fa fa-comments"></span>
+                            <span class="count"> 4 </span>
+                            <span class="description"> Social Networks </span>
+                        </article>
+                        <!-- card 4 -->
+                        <article class="card card-4">
+                            <span class="fa fa-film"></span>
+                            <span class="count"> 3 </span>
+                            <span class="description"> Entertainment </span>
+                        </article>
+                        <!-- card 5 -->
+                        <article class="card card-5">
+                            <span class="fa fa-calendar"></span>
+                            <span class="count"> 1 </span>
+                            <span class="description"> News </span>
+                        </article>
+                        <!-- card 6 -->
+                        <article class="card card-6 bg-color-white ">
+                            <span class="fa fa-bars"></span>
+                            <span class="count"> +28 </span>
+                            <span class="description "> Other </span>
+                        </article>
+                    </div>
+                    <!-- End : Dashboard Cards -->
+                    <!-- Start : Social Action -->
+                    <section class="social-actions ">
+                        <div class="header-social bg-color-white">
+                            <div class="divider-title bg-color-white"> <span class="count"> 2 </span> Retail </div>
+                        </div>
+                        <!-- Start : Social card -->
+                        <article class="social-card bg-color-white">
+                            <div class="brand-wrap">
+                                <figure class="social-brand">
+                                    <img src="img/social/amazon.png" alt="Amazon">
+                                </figure>
+                                <div class="media-body">
+                                    <h4 class="brand-title">Amazon</h4>
+                                    <div class="rate text-warning">
+                                        <span class="fas fa-star "></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="far fa-star"></span>
+                                        <span class="count"> &nbsp 4.0 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart bg-color-light text-white">
+                                <span class="fas fa-cart-plus "></span>
+                            </div>
+                            <div class="social-users">
+                                <figure class="users">
+                                    <img src="img/users/user_HR.PNG" alt="user_HR">
+                                </figure>
+                                <figure class="users">
+                                    <img src="img/users/user_developer.PNG" alt="user_developer">
+                                </figure>
+                                <span class="extra">+6</span>
+                                <span class="fas fa-user-plus"></span>
+                            </div>
+                            <div class="deals">
+                                <h3 class="count text-primary"> 20 </h3>
+                                <p class="info"> Deals </p>
+                            </div>
+                            <div class="brand-buttons">
+                                <button class="btn btn-white text-primary btn-visit"><span class="fa fa-share"></span>
+                                    Visit Website </button>
+                                <button class="btn btn-white text-light btn-login"> login </button>
+                            </div>
+                        </article>
+                        <article class="social-card bg-color-white">
+                            <div class="brand-wrap">
+                                <figure class="social-brand">
+                                    <img src="img/social/bestbuy.jpg" alt="bestbuy">
+                                </figure>
+                                <div class="media-body">
+                                    <h4 class="brand-title">Best Buy</h4>
+                                    <div class="rate text-warning">
+                                        <span class="fas fa-star "></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="far fa-star"></span>
+                                        <span class="count"> &nbsp 4.0 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart bg-color-light text-white">
+                                <span class="fas fa-cart-plus "></span>
+                            </div>
+                            <div class="social-users">
+                                <figure class="users">
+                                    <img src="img/users/user_HR.PNG" alt="user_HR">
+                                </figure>
+                                <figure class="users">
+                                    <img src="img/users/user_developer.PNG" alt="user_developer">
+                                </figure>
+                                <span class="extra">+6</span>
+                                <span class="fas fa-user-plus"></span>
+                            </div>
+                            <div class="deals">
+                                <h3 class="count text-primary"> 20 </h3>
+                                <p class="info"> Deals </p>
+                            </div>
+                            <div class="brand-buttons">
+                                <button class="btn btn-white text-primary btn-visit"><span class="fa fa-share"></span>
+                                    Visit Website </button>
+                                <button class="btn btn-white text-light btn-login"> login </button>
+                            </div>
+                        </article>
+                        <!-- End : Social card -->
+
+                        <div class="header-social bg-color-white">
+                            <div class="divider-title bg-color-white"> <span class="count"> 2 </span> Social Networks
+                            </div>
+                        </div>
+                        <!-- Start : Social card -->
+                        <article class="social-card bg-color-white">
+                            <div class="brand-wrap">
+                                <figure class="social-brand">
+                                    <img src="img/social/Dribble.png" alt="Dribble">
+                                </figure>
+                                <div class="media-body">
+                                    <h4 class="brand-title"> Dribble </h4>
+                                    <div class="rate text-warning">
+                                        <span class="fas fa-star "></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="count"> &nbsp 4.0 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart bg-color-light text-white">
+                                <span class="fas fa-cart-plus "></span>
+                            </div>
+                            <div class="social-users">
+                                <figure class="users">
+                                    <img src="img/users/user_HR.PNG" alt="user_HR">
+                                </figure>
+                                <figure class="users">
+                                    <img src="img/users/user_developer.PNG" alt="user_developer">
+                                </figure>
+                                <span class="extra">+6</span>
+                                <span class="fas fa-user-plus"></span>
+                            </div>
+                            <div class="deals">
+                                <h3 class="count text-primary"> 20 </h3>
+                                <p class="info"> Deals </p>
+                            </div>
+                            <div class="brand-buttons">
+                                <button class="btn btn-white text-primary btn-visit"><span class="fa fa-share"></span>
+                                    Visit Website </button>
+                                <button class="btn btn-white text-light btn-login"> login </button>
+                            </div>
+                        </article>
+                        <article class="social-card bg-color-white">
+                            <div class="brand-wrap">
+                                <figure class="social-brand">
+                                    <img src="img/social/facebook.png" alt="Facebook">
+                                </figure>
+                                <div class="media-body">
+                                    <h4 class="brand-title">Facebook</h4>
+                                    <div class="rate text-warning">
+                                        <span class="fas fa-star "></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="count"> &nbsp 4.0 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart bg-color-light text-white">
+                                <span class="fas fa-cart-plus "></span>
+                            </div>
+                            <div class="social-users">
+                                <figure class="users">
+                                    <img src="img/users/user_HR.PNG" alt="user_HR">
+                                </figure>
+                                <figure class="users">
+                                    <img src="img/users/user_developer.PNG" alt="user_developer">
+                                </figure>
+                                <span class="extra">+6</span>
+                                <span class="fas fa-user-plus"></span>
+                            </div>
+                            <div class="deals">
+                                <h3 class="count text-primary"> 20 </h3>
+                                <p class="info"> Deals </p>
+                            </div>
+                            <div class="brand-buttons">
+                                <button class="btn btn-white text-primary btn-visit"><span class="fa fa-share"></span>
+                                    Visit Website </button>
+                                <button class="btn btn-white text-light btn-login"> login </button>
+                            </div>
+                        </article>
+                        <!-- End : Social card -->
+                    </section>
+                    <!-- End : Social Action -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- End : Site Content -->
+    <!-- End : Main Body -->
+
+</body>
+
+</html>
